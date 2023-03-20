@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CHECKLIST TEMPLATE FOR NEGATIVE DATA INITIATIVE
+%%% ADAPTED FROM LIVECOMS ARTICLE TEMPLATE (3/19/2023)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PREAMBLE
+\documentclass[9pt,lessons]{livecoms}
+% Use the 'onehalfspacing' option for 1.5 line spacing
+% Use the 'doublespacing' option for 2.0 line spacing
+% Use the 'lineno' option for adding line numbers.
+% Use the 'pubversion' option for adding the citation and publication information to the document footer, when the DOI is assigned and the article is added to a live issue.
+% The 'bestpractices' option for indicates that this is a best practices guide.
+% Omit the bestpractices option to remove the marking as a LiveCoMS paper.
+% Please note that these options may affect formatting.
+
+\usepackage{lipsum} % Required to insert dummy text
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\DeclareSIUnit\Molar{M}
+\usepackage[italic]{mathastext}
+\graphicspath{{figures/}}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% IMPORTANT USER CONFIGURATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\versionnumber}{0.1}  % you should update the minor version number in preprints and major version number of submissions.
+% Do not add a newline in the next command, no matter how long the repository name is, as it will break the link in the PDF.
+\newcommand{\githubrepository}{\url{https://github.com/Poruthoor/NegativeDataInitiative}}  %this should be the main github repository for the article.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Negative Data Initiative [Letter v\versionnumber]}
+
+\author[1*]{Trainee collective}
+
+\blurb{This checklist document is maintained online on GitHub at \githubrepository; to provide feedback, suggestions, or help improve it, please visit the GitHub repository and participate via the issue tracker.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\maketitle
+
+\begin{abstract}
+   An ongoing community letter for Negative Data Initiative. 
+
+   Current focus : Negative Data in Computational Biophysics. 
+\end{abstract}
+
+\end{frontmatter}
+
+
+% This provides a checklist which
+% - spans a full page
+% - consists of multiple sub-checklists
+% - exists on a separate page
+% This style of checklist will be especially helpful if you want to encourage readers to print and use your checklist in practice, as they
+% can easily print it without also printing other material from your manuscript. However, other styles of checklist are also possible (below).
+\begin{Checklists*}[p!]
+
+\begin{checklist}{Initial hypothesis}
+\begin{itemize}
+\item An initial testable hypothesis backed up by strong rationale is formed ( based on literature review, prior knowledge, research gap identified, etc.)
+\item A detailed, careful experiment design is formed to test the hypothesis with statistical rigor.
+(Included independent replicates, following best practices in the community, ...) 
+\item Benchmarks for testing the validity of results is set up a priori.
+\end{itemize}
+\end{checklist}
+
+\begin{checklist}{Analysing the data}
+\begin{itemize}
+\item Sanity checks have been done to the best of your abilities.
+Code/method review, debugging, testing..etc. Independent replicates   
+\item Identified or tried different analysis schemes when the initial scheme failed the anticipated results.
+\item Additional testing scheme was added to check for a potential flaw in the design
+\item Considered alternative hypotheses and tested them
+\end{itemize}
+\end{checklist}
+
+\begin{checklist}{Interpreting the data}
+\begin{itemize}
+\item You have not done any ``cherry-picking" of data. Analysis schemes are done on data without any bias
+\item Your analysis indicates the rejection of your initial hypothesis with statistical rigor.
+Or, you see an absence of anticipated features or characteristics that helped you formulate your hypothesis.
+Including simple, semiquantitative checks that describe them.
+\end{itemize}
+\end{checklist}
+
+\begin{checklist}{Reporting the data}
+\begin{itemize}
+\item Honest and complete reporting of all the attempted tests and rationale
+\item Report alternative hypothesis tested if any. Discuss such possibilities.
+\item Discuss the potential flaws, pitfalls, and other features of the method that was used.
+\end{itemize}
+\end{checklist}
+
+\end{Checklists*}
+
+\section{Why this initiative?}
+
+The core idea is to help the trainees to showcase the negative results and pitfalls they encountered while
+having good visibility and feedback from the community.
+Based on an \href{https://twitter.com/poruthoor/status/1635740205373087744?s=20}{earlier tweet discussion},
+a group of trainees came towards to brainstorm on this idea.
+The group thinks that the following model might work better:\\
+
+\textbf{Short-term goals:}
+
+1. Form a community consensus on the definition of negative data
+
+2. Once the consensus is made, prepare a checklist for the trainees to follow to make sure what they have is negative data
+
+3. Form an advisory board to assist the trainee group by inviting senior members of the community
+
+4. Initial call for moderators/volunteers to the trainee community to organize a virtual webinar/conference.
+This virtual gathering allows the trainees to discuss and share their negative data.
+Applications to the virtual gathering are based on abstract submission.
+This call for volunteers is to organize the event.
+The advisory board will be kept in the loop during this entire process\\
+
+\textbf{Long term goals:}
+
+5. Organizing the event
+
+6. Potential publication via LiveCoMs ``lessons learned" article by grouping the negative data
+
+7. Use this model to advocate for more visibility in major conferences\\
+
+The group decided to run a pilot program of this model with the computational biophysics community since the initial core trainees and potential advisory board members will be coming out of this community.
+
+
+
+\section{Discussion}
+
+The trainee group is requesting feedback from the community on (1) the overall model,
+(2) the definition of negative data, and (c) a potential (LiveCoMs-like) checklist for trainees to
+identify the negative data at their hands.
+Following the LiveCoMs protocol, we will use the Github issue tracker for feedback, suggestions, and further discussions.
+
+\subsection {Feedback on the overall model}
+Regarding the feedback on our proposed model, described in the previous section, the discussions are hosted here at \textbf{link}
+
+\subsection {Feedback on negative data definition}
+The trainee group discussed on the definition of negative data and suggested the following.
+Again, we are using this to initiate a discussion and will finalize it after extensive feedback from the community.
+
+\begin{definition}
+Negative Data does not support the initial hypothesis or expected outcome after careful and reproducible meticulous scientific research.
+However, the authors believe that this can drive science forward or are lessons learned that help future trainees while designing their experiments.  
+\end{definition}
+
+We hope to reach a clear, concise definition of negative data through the discussions hosted here at \textbf{link}.
+We ask the community to share their definition of negative data here.
+
+\subsection{Feedback on the checklist}
+
+From the brief discussion during the brainstorming meeting, we propose a general outline for a checklist to identify negative data and invite community suggestions.
+Please find the checklist on the next page.
+The discussion for the checklist feedback is hosted here at \textbf{link}
+
+\end{document}
