@@ -413,7 +413,7 @@
   %% Define abstract's behavior when placed in frontmatter
   \renewenvironment{abstract}{%
      \setlength{\parindent}{0pt} %\raggedright
-     \raisebox{72pt-\baselineskip}[0pt][0pt]{\makebox[0pt][r]{\parbox[t]{3cm}{%
+     \raisebox{96pt-\baselineskip}[0pt][0pt]{\makebox[0pt][r]{\parbox[t]{3cm}{%
        \raggedright\itshape\footnotesize\@blurb\par\medskip%
        This version dated \@date%
      }\hspace*{1cm}}}%
