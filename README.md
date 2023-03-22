@@ -1,4 +1,4 @@
-# Negative Data Initiative
+# Learning Curve Initiative
 
 Repo for building a framework for highlighting negative data
 
